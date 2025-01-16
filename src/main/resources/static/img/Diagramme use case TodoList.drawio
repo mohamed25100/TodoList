@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="TsWHqpz44xOTIZvN9osF">
+    <mxGraphModel dx="1050" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-1" value="utilisateur connecté" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="160" as="sourcePoint" />
+            <mxPoint x="250" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-8" value="Afficher page d&#39;accueil" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-9" value="utilisateur connecté" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="320" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-11" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Afficher page d&#39;accueil&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="320" as="sourcePoint" />
+            <mxPoint x="480" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-13" value="Renvoi liste des&amp;nbsp;tâches en base" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-14" value="Use Case : Gestion des Tâches&lt;div&gt;&lt;li&gt;&lt;strong&gt;Objectif :&lt;/strong&gt;&amp;nbsp;Permettre à l&#39;utilisateur connecté de consulter, ajouter, mettre à jour ou supprimer des tâches.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Action :&lt;/strong&gt;&amp;nbsp;L&#39;utilisateur accède à la page de gestion des tâches. Le système charge et affiche la liste des tâches, permettant les actions d&#39;ajout, mise à jour, suppression ou recherche.&lt;/li&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="603" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-17" value="utilisateur connecté" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="61.5" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-18" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="101.5" y="450" as="sourcePoint" />
+            <mxPoint x="251.5" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-19" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Afficher page d&#39;accueil&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="251.5" y="410" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-20" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371.5" y="450" as="sourcePoint" />
+            <mxPoint x="481.5" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-21" value="&lt;span style=&quot;text-align: left;&quot;&gt;Ajouter&lt;/span&gt;&amp;nbsp;une tâche" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="481.5" y="410" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-30" value="utilisateur connecté" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="61.5" y="520" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-31" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="101.5" y="560" as="sourcePoint" />
+            <mxPoint x="251.5" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-32" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Afficher page d&#39;accueil&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="251.5" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-33" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371.5" y="560" as="sourcePoint" />
+            <mxPoint x="481.5" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-34" value="&lt;span style=&quot;text-align: left;&quot;&gt;mettre à jour&amp;nbsp;&lt;/span&gt;une tâche" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="481.5" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-35" value="utilisateur connecté" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="61.5" y="630" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-36" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="101.5" y="670" as="sourcePoint" />
+            <mxPoint x="251.5" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-37" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Afficher page d&#39;accueil&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="251.5" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-38" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371.5" y="670" as="sourcePoint" />
+            <mxPoint x="481.5" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xLnHxZ-x3fyffAVxHDSB-39" value="&lt;span style=&quot;text-align: left;&quot;&gt;supprimer&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;&lt;/span&gt;une tâche" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="481.5" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

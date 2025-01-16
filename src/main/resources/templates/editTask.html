@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+      lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Modifier la tâche</title>
+</head>
+<body>
+<div layout:fragment="content">
+  <h2>Modifier la tâche</h2>
+  <form th:action="@{/update}" th:object="${task}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <div>
+      <label for="name">Nom</label>
+      <input type="text" id="name" th:field="*{name}" required />
+    </div>
+    <div>
+      <label for="description">Description</label>
+      <textarea id="description" th:field="*{description}" required></textarea>
+    </div>
+    <div>
+      <label for="category">Catégorie</label>
+      <select id="category" th:field="*{category}" required>
+        <option th:each="category : ${categories}"
+                th:value="${category.id}"
+                th:text="${category.name}">
+        </option>
+      </select>
+    </div>
+    <div>
+      <button type="submit">Mettre à jour la tâche</button>
+    </div>
+  </form>
+
+</div>
+</body>
+</html>

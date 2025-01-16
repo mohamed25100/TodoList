@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security5"
+      lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mes tâches</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <!-- Vérifier si l'utilisateur est connecté -->
+    <div sec:authorize="isAuthenticated()">
+        <h2>Liste de mes tâches</h2>
+        <!-- Afficher la table des tâches si l'utilisateur est connecté -->
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="task : ${listTask}">
+                <td th:text="${task.id}"> </td>
+                <td th:text="${task.name}"> </td>
+                <td th:text="${task.description}"> </td>
+                <td>
+                    <!-- Lien de modification avec l'ID de la tâche -->
+                    <a th:href="@{/edit?id={id}(id=${task.id})}">Modifier</a>
+                </td>
+                <td>
+                    <!-- Lien de suppression avec l'ID de la tâche -->
+                    <a th:href="@{/delete?id={id}(id=${task.id})}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette tâche ?')">Supprimer</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
