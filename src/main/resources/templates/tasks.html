@@ -10,6 +10,11 @@
 </head>
 <body>
 <div layout:fragment="content">
+    <form th:action="@{/index}" method="get">
+        <input type="text" name="keyword" placeholder="Rechercher une tâche" th:value="${keyword}" />
+        <button type="submit">Rechercher</button>
+    </form>
+
     <!-- Vérifier si l'utilisateur est connecté -->
     <div sec:authorize="isAuthenticated()">
         <h2>Liste de mes tâches</h2>

@@ -34,7 +34,7 @@ public class TaskController {
      * @return la page tasks.html
      */
     @GetMapping("/index")
-    public String index(Model model) {
+    public String index(Model model,@RequestParam(name="keyword" , defaultValue = "") String keyword) {
         try {
             // Récupérer l'utilisateur connecté
             String username = getUsernameFromSecurityContext();
@@ -42,14 +42,23 @@ public class TaskController {
             // Récupérer l'utilisateur connecté via la couche business
             User user = businessImpl.getUserByUsername(username);
 
-            // Récupérer uniquement les tâches de l'utilisateur connecté via la couche business
-            List<Task> tasks = businessImpl.getTasksByUser(user); // Utilisation de la couche business
+            // Récupérer les tâches filtrées par mot-clé pour l'utilisateur connecté
+            List<Task> tasks;
+            if (keyword.isEmpty()) {
+                tasks = businessImpl.getTasksByUser(user);
+            } else {
+                tasks = businessImpl.searchTasksByKeyword(user, keyword);
+            }
 
-            model.addAttribute("listTask", tasks); // Ajouter les tâches à la vue
+            model.addAttribute("listTask", tasks);
 
-            model.addAttribute("username", username); // Ajouter le nom d'utilisateur à la vue
+            model.addAttribute("username", username);
+
+            model.addAttribute("keyword", keyword);
+
         } catch (Exception e) {
-            System.err.println("Erreur: " + e.getMessage());
+            logger.error("Erreur lors de la récupération des tâches : " + e.getMessage());
+            model.addAttribute("errorMessage", "Une erreur est survenue lors de la récupération des tâches.");
         }
 
         return "tasks"; // Retourner la page des tâches (tasks.html)

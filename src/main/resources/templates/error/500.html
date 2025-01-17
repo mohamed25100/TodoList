@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layout">
+<head>
+<meta charset="utf-8">
+<title>erreur serveur</title>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<img alt="le serveur est temporairement indisponible ou en maintenance" src="../static/img/500.jpg" th:src="@{img/500.jpg}">
+	</div>
+</body>
+
+</html>

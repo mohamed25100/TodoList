@@ -70,4 +70,22 @@ public class LoginController {
         userRepository.save(user);
         return "redirect:/login";
     }
+
+    /**
+     * Méthode en GET pour /403 pour interdire l'accès vers une ressource demandée
+     * @return 403.html
+     */
+    @GetMapping("/403")
+    public String accessDenied() {
+        return "error/403";
+    }
+
+    /**
+     * Méthode en GET pour /404 pour indiquer que la ressource demandée n'existe pas
+     * @return 404.html
+     */
+    @GetMapping("/error")
+    public String error() {
+        return "error/404";
+    }
 }

@@ -68,4 +68,6 @@ public interface IBusiness {
      * @throws Exception
      */
     public void deleteTask(Long taskId) throws Exception;
+
+    public List<Task> searchTasksByKeyword(User user, String keyword) throws Exception;
 }

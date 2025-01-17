@@ -55,9 +55,6 @@ public class IBusinessImpl implements IBusiness{
 
     @Override
     public void saveTask(Task task) throws Exception {
-        if (task == null) {
-            throw new Exception("La tâche à sauvegarder ne peut pas être null");
-        }
         taskRepository.save(task);
     }
 
@@ -66,25 +63,22 @@ public class IBusinessImpl implements IBusiness{
         if (user == null) {
             throw new Exception("Utilisateur introuvable.");
         }
-        return taskRepository.findByUser(user); // Assuming this method exists in TaskRepository
+        return taskRepository.findByUser(user);
     }
 
     @Override
     public Task getTaskById(Long id) throws Exception {
-        Optional<Task> task = taskRepository.findById(id); // Use the repository method to fetch the task by ID
-        if (task.isPresent()) {
-            return task.get(); // Return the task if found
-        } else {
-            throw new Exception("Tâche introuvable avec l'ID: " + id); // Throw an exception if not found
-        }
+        return taskRepository.getById(id);
     }
 
     @Override
     public void deleteTask(Long taskId) throws Exception {
-        // Find the task by ID
-        Task task = taskRepository.findById(taskId).orElseThrow(() -> new Exception("Tâche non trouvée"));
+        // Supprimez la tâche.
+        taskRepository.deleteById(taskId);
+    }
 
-        // Delete the task
-        taskRepository.delete(task);
+    @Override
+    public List<Task> searchTasksByKeyword(User user, String keyword) {
+            return taskRepository.findByUserAndKeyword(user.getId(), "%" + keyword + "%");
     }
 }

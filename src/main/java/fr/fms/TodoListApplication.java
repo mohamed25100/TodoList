@@ -69,7 +69,7 @@ public class TodoListApplication implements CommandLineRunner {
 		categoryRepository.save(category3);
 
 		// Exemple de création user
-		User user = new User(null,"mohamed","$2a$10$s3XJbTsSBnJmCT6sXJ1lauyCPzHtHT9HjMhDuNlMvqAcnsfOcjNhW","mohamed.boucherba@fms-ea.com",null);
+		User user = new User(null,"bob","$2a$10$s3XJbTsSBnJmCT6sXJ1lauyCPzHtHT9HjMhDuNlMvqAcnsfOcjNhW","mohamed.boucherba@fms-ea.com",null);
 		userRepository.save(user);
 
 		// Ajout d'une nouvelle tâche avec des détails
